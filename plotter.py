@@ -45,7 +45,7 @@ with open('data.txt', 'r' ) as csvfile:
         if(row[1] not in movers):
             movers[row[1]] = mover(int(row[9]))
 
-    m = movers[row[1]]
+        m = movers[row[1]]
     
     m.x.append(float(row[2]) ) # Position x
     m.z.append(float(row[3]) ) # Position z
